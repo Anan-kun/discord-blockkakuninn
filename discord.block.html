@@ -125,6 +125,10 @@ Discord連携
 <script>
 function showDemo(){
 
+    await fetch("/api/count", {
+        method: "POST"
+    });
+
     document.getElementById("demoButton").disabled = true;
 
     document.getElementById("loading").style.display = "block";
